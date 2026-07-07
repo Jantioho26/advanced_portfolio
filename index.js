@@ -1,18 +1,27 @@
 
-// Wl3X2dQEgwt21sBFA
 
-// function contact(event) {
-//     event.preventDefault();
-//     emailjs
-//        .sendForm(
-//         'service_d38h55g'
-//         'template_s3chdi9'
-//         event.target
-//         'Wl3X2dQEgwt21sBFA'
-//        ).then(() => {
-//         console.log('this worked1')
-//        })
-setTimeout(() => {
-    console.log('it worked 1')
-}, 500);
+
+
+function contact(event) {
+    event.preventDefault();
+    const loading =document.querySelector('.modal__overlay--loading');
+    const success =document.querySelector('.modal__overlay--success');
+    loading.classList += " modal__overlay--visible";
+    emailjs
+    .sendForm(
+        'service_d38h55g',
+        'template_s3chi9',
+        event.target,
+        'user_Wl3X2dQEgwt21sBFA'
+    ).then(() => {
+        loading.classList.remove("modal__overlay--visible");
+        success.classList += " modal__overlay--visible";
+    }).catch(() => {
+        loading.classList.remove("modal__overlay--visible");
+        alert(
+            "The email service is temporarily unavailable. Please contact me directly at joyantioho@gmail.com"
+        );
+    })
 }
+
+
