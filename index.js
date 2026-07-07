@@ -9,18 +9,15 @@ function contact(event) {
     loading.classList += " modal__overlay--visible";
     emailjs
     .sendForm(
-        'service_d38h55g',
+        'service_s4tl5r6',
         'template_m31dp54',
         event.target,
-        'user_Wl3X2dQEgwt21sBFA'
+        'user_tq5yOef37QZrOgoN3'
     ).then(() => {
         loading.classList.remove("modal__overlay--visible");
         success.classList += " modal__overlay--visible";
     }).catch(() => {
-        loading.classList.remove("modal__overlay--visible");
-        alert(
-            "The email service is temporarily unavailable. Please contact me directly at joyantioho@gmail.com"
-        );
+        console.log("EmailJS. error:", error)
     })
 }
 
