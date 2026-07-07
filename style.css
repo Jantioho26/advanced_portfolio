@@ -399,7 +399,6 @@ MODAL
 
 .modal__overlay--visible {
     z-index: 1;
-
 }
 
 .fa-spinner {
