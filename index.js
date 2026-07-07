@@ -4,13 +4,13 @@
 
 function contact(event) {
     event.preventDefault();
-    const loading =document.querySelector('.modal__overlay--loading');
-    const success =document.querySelector('.modal__overlay--success');
+    const loading = document.querySelector('.modal__overlay--loading');
+    const success = document.querySelector('.modal__overlay--success');
     loading.classList += " modal__overlay--visible";
     emailjs
     .sendForm(
         'service_d38h55g',
-        'template_s3chi9',
+        'template_m31dp54',
         event.target,
         'user_Wl3X2dQEgwt21sBFA'
     ).then(() => {
