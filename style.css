@@ -6,6 +6,10 @@
    font-family: 'roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 li {
     list-style-type: none;
 }
@@ -689,8 +693,7 @@ SHAPES
     .header__para {
         font-size: 18px;
     }
-    .nav__link:first-child {
-        display: none;
+    
     }
     .project__description--para {
         display: none;
