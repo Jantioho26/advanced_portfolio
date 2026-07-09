@@ -285,16 +285,6 @@ nav {
     height: 50px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; 
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100px;
-}
-
 .nav__link {
     margin: 0 12px;
 }
@@ -694,7 +684,6 @@ SHAPES
         font-size: 18px;
     }
     
-    }
     .project__description--para {
         display: none;
     }
